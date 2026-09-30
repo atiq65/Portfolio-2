@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 2 | Professional 3D Developer & Creator Hub</title>
+    <!-- Google Fonts Poppins -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- Font Awesome Icons CND -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+ <!-- External CSS Stylesheet link -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- There .js CDN for 3D Graphics -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</head>
+<body>
+    <!-- Custom Glowing Mouse Cursor -->
+     <div class="cursor" id="cursor"></div>
+
+     <!-- 3D Web Global Background Canvas Container -->
+      <div id="canvas-container"></div>
+
+      <!-- ====================== NAVIGATION BAR ========================= -->
+       <nav>
+        <div class="logo">Portfolio 2</div>
+        <!-- Navigation Links -->
+         <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+         </ul>
+
+         <!-- Mobile Menu Hamburger Icon -->
+          <div class="menu-toggle" id="mobileMenu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+       </nav>
+       <!-- =====================HERO SECTION=============== -->
+        <section id="home" class="hero-section">
+         <div class="hero-grid">
+            <div class="hero-content">
+               <span class="badge">Full-Stack & 3D Web Developer</span>
+               <h1>Building Immersive <span class="highlight">Web Worlds</span></h1>
+               <p>I build high-performance web applications, advanced 3D WebGL interfaces, and clean user-centric digital experiences.</p>
+               <div class="btn-group">
+                  <a href="#projects" class="btn primary">Explore Projects</a>
+                  <a href="#contact" class="btn primary outline">Let's Talk</a>
+               </div>
+            </div>
+            <div class="hero-image-box">
+               <img src="./images/Hero banner.jpg" alt="Hero banner">
+            </div>
+         </div>
+        </section>
+
+        <!-- ================== ABOUT SECTION ============= -->
+         <section id="about">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="about-grid">
+               <div class="about-img-box">
+                  <img src="./images/About.jpg" alt="About">
+               </div>
+               <div class="about-text">
+                  <h3>Transforming Logic Into Visual Reality</h3>
+               <p>Hello! I am a passionate developer specializing in full-stack web architectures, frontend interactivity, and creating engaging 3D animations using WebGL and Three.js.</p>
+                <p>My goal is to bridge the gap between clean, high-performance backend logic and visually breathtaking user interfaces.</p>   
+               </div>
+            </div>
+         </section>
+
+         <!-- =================== SKILLS SECTION ======== -->
+          <section id="skills" class="auto-height">
+            <h2 class="section-title" style="margin-bottom: 25px;">Professional <span class="highlight">Skills</span></h2>
+            <div class="skills-container">
+               <!-- Left Skill Card -->
+                <div class="skill-chart-card">
+                  <div class="skill-item">
+                     <div class="skill-info">
+                        <span>Frontend Development (HTML/CSS/Tailwind)</span><span>95%</span>
+                     </div>
+                     <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%;"></div>
+                     </div>
+
+                  </div>
+                  <div class="skill-item">
+                     <div class="skill-info">
+                        <span>JavaScript</span><span>90%</span>
+                     </div>
+                     <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%;"></div>
+                     </div>
+
+                  </div>
+                  <div class="skill-item">
+                     <div class="skill-info">
+                        <span>Three.js / WebGL 3D Animations</span><span>85%</span>
+                     </div>
+                     <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%;"></div>
+                     </div>
+
+                  </div>
+                </div>
+                <!-- Right Skill Card  -->
+                 <div class="skill-chart-card">
+                  <div class="skill-item">
+                     <div class="skill-info">
+                        <span>Node.js / Backend Architecture</span><span>80%</span>
+                     </div>
+                     <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%;"></div>
+                     </div>
+
+                  </div>
+                  <div class="skill-item">
+                     <div class="skill-info">
+                        <span>UI / UX & Responsive Design</span><span>92%</span>
+                     </div>
+                     <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%;"></div>
+                     </div>
+
+                  </div>
+                  <div class="skill-item">
+                     <div class="skill-info">
+                        <span>Database & API Integration</span><span>88%</span>
+                     </div>
+                     <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%;"></div>
+                     </div>
+
+                  </div>
+                </div>
+            </div>
+          </section>
+<!-- ======================PROJECTS SECTION=========== -->
+ <section id="projects">
+   <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+   <div class="projects-grid">
+      <!-- Project Card 1 -->
+       <div class="project-card">
+         <img src="./images/3D Interactive.jpg" alt="3D Interactive" class="project-img">
+         <div class="project-info">
+            <h3>3D Interactive Portfolio</h3>
+            <p>A high-performance WebGL wrapper built using Three.js for interactive web showcases.</p>
+            <a href="#" class="btn primary small-btn">Source Code</a>
+         </div>
+       </div>
+       <!-- Project Card 2 -->
+       <div class="project-card">
+         <img src="./images/Analytics Dashboard.jpg" alt="Analytics Dashboard" class="project-img">
+         <div class="project-info">
+            <h3>Analytics Dashboard</h3>
+            <p>A modern analytics and logging platform designed specifically to monitor workflow metrics.</p>
+            <a href="#" class="btn primary small-btn">Source Code</a>
+         </div>
+       </div>
+       <!-- Project Card 3 -->
+       <div class="project-card">
+         <img src="./images/AI Content Studio.webp" alt="AI Content Studio" class="project-img">
+         <div class="project-info">
+            <h3>AI Content Studio</h3>
+            <p>An intelligent web application automating content structures and structured workflows.</p>
+            <a href="#" class="btn primary small-btn">Source Code</a>
+         </div>
+       </div>
+   </div>
+ </section>
+ <!-- ============== TESTIMONIALS SECTION ================ -->
+<section id="testimonials" class="auto-height">
+   <h2 class="section-title">Client <span class="highlight">Testimonials</span></h2>
+   <div class="testimonial-grid">
+      <!-- Testimonial Item 1 -->
+       <div class="testimonial-card">
+         <div>
+            <div class="star-rating">
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Portfolio 1 delivered an exceptional 3D web interface for our startup. His attention to detail and Three.js expertise blew our clients away!"</p>
+         </div>
+         <div class="client-info">
+            <img src="./images/Sarah Jenkins.jpg" alt="Sarah Jenkins" class="client-avatar">
+            <div class="client-details">
+               <h4>Sarah Jenkins</h4>
+               <span>Product Manager, TechFlow</span>
+            </div>
+         </div>
+       </div>
+      <!-- Testimonial Item 2 -->
+       <div class="testimonial-card">
+         <div>
+            <div class="star-rating">
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Working with this developer was smooth and professional. The portfolio template we bought is super clean, fast, and easy to customize."</p>
+         </div>
+         <div class="client-info">
+            <img src="./images/Sheikh Atiq Hasan.jpg" alt="Sheikh Atiq Hasan" class="client-avatar">
+            <div class="client-details">
+               <h4>Sheikh Atiq Hasan</h4>
+               <span>Web Developer</span>
+            </div>
+         </div>
+       </div>
+      <!-- Testimonial Item 3 -->
+       <div class="testimonial-card">
+         <div>
+            <div class="star-rating">
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+            </div>
+            <p>"An absolute professional! The web animations and responsiveness exceeded all our expectations. Highly recommended for creative dev work."</p>
+         </div>
+         <div class="client-info">
+            <img src="./images/Emily Watson.jpg" alt="Emily Watson" class="client-avatar">
+            <div class="client-details">
+               <h4>Emily Watson</h4>
+               <span>Creative Director, StudioX</span>
+            </div>
+         </div>
+       </div>
+   </div>
+</section>
+<!-- ======================CONTACT SECTION ============ -->
+ <section id="contact">
+   <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+   <div class="contact-wrapper">
+      <div>
+         <h3 style="font-size: 1.8rem; margin-bottom: 15px;">Let's Collaborate!</h3>
+         <p style="color: #a0a0c0; line-height: 1.7;">Have a project in mind, looking to buy source code, or want to hire me? Send a message and I'll get back to you prompytly.</p>
+      </div>
+      <div class="contact-box">
+         <form onsubmit="event.preventDefault(); alert ('Thank you! Your message has been sent successfully.');">
+            <input type="text" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit" class="btn primary full-width">Send Message</button>
+         </form>
+      </div>
+   </div>
+ </section>
+ <!-- ============ FOOTER SECTION ================= -->
+  <footer>
+   <div class="footer-content">
+      <div class="footer-section">
+         <h4>Portfolio </h4>
+         <p>Building clean code architectures, 3D WebGL interfaces, and high-performance modern web solutions.</p>
+      </div>
+      <div class="footer-sectio">
+         <h4>Quick Links</h4>
+         <p><a href="#home" class="footer-link">Home</a></p>
+         <p><a href="#about" class="footer-link">About</a></p>
+         <p><a href="#projects" class="footer-link">Projects</a></p>
+         <p><a href="#testimonials" class="footer-link">Reviews</a></p>
+      </div>
+      <div class="footer-section">
+         <h4>Connect With Me</h4>
+         <p>Find me across Professional networks:</p>
+         <div class="social-links">
+            <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+         </div>
+      </div>
+   </div>
+   <div class="footer-bottom">
+      <p>&copy; 2026 Portfolio 1. All rights reserved. Ready for production & client delivery.</p>
+   </div>
+  </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
